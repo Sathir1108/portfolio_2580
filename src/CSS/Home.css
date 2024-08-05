@@ -1,0 +1,38 @@
+
+
+
+
+
+.grid-item-image{
+  padding-top: 200px;
+}
+  .grid-container-1{
+    display: grid;
+    grid-template-columns: 400px 800px;
+    margin-top: 50px;
+  }
+  
+ 
+
+  .grid-item-image{
+    width:300px;
+    height:auto;
+    
+    
+  }
+
+  .grid-item-image-1{
+    width:300px;
+    height:auto;
+    
+    
+  }
+
+
+
+@media (max-width: 768px) {
+  .grid-container-1 {
+      grid-template-columns: 1fr;
+  }
+}
+
