@@ -1,0 +1,66 @@
+/* Container for the entire Projects component */
+.projects-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    
+  }
+
+
+  /* Project card styling */
+.project-card {
+  background-color: #f9f9f9; /* Default background color */
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Alternating background for even projects */
+.project-card:nth-child(even) {
+  background-color: #e3f2fd;
+}
+
+  h2{
+    text-align: center;
+  }
+  
+  /* Project title styling */
+  .projects-container h3 {
+    font-size: 1.5em;
+    color: #0073e6;
+    margin-bottom: 10px;
+  }
+  
+  /* Project status styling */
+  .project-status {
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  /* Project details styling */
+  .project-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .project-details li {
+    margin-bottom: 5px;
+    line-height: 1.6;
+  }
+  
+  /* Tools styling */
+  .project-tools {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .project-tools p {
+    display: inline;
+    font-weight: normal;
+    color: #555;
+  }
+  

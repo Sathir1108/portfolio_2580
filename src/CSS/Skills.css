@@ -1,25 +1,123 @@
+html{
+  scroll-padding-top: 50px;;
+}
+
+.skills{
+  display:flex;
+  justify-content: center;
+  margin-bottom:0px;
+}
+
+#skci-1{
+  margin-top: 100px;
+  margin-left: 100px;
+  width:400px;
+}
+
+
 .grid-container-skills {
     display: grid;
-    column-gap: 50px;
-    row-gap: 50px;
-    grid-template-columns: 200px 200px;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-columns: 250px 250px;
     padding: 10px;
+    margin-top: 50px;
   }
 
 
   .fs-1{
-    text-align: center;
+    text-align: left;
+    padding-top: 100px;
+    font-weight: bold;
     
   }
 
   .grid-item-skills {
+    
+    display: flex;
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     font-size: 20px;
     text-align: center;
+    
   
   }
+
+#gts-1{
+  
+  background-color: rgb(157,214,204);
+}
+
+#gts-2{
+   background-color: rgb(252,197,95);
+}
+
+#gts-3{
+   background-color: rgb(255,201,175);
+}
+
+#gts-4{
+   background-color: rgb(164,193,249);
+}
+
+#gts-5{
+   background-color: rgb(193,222,166);
+}
+
+#gts-6{
+   background-color: rgb(214,202,245);
+}
+
+#ski-1{
+  font-size:40px;
+  margin-right:20px;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+.sk-content{
+  margin-top: 5px;
+}
+
+.skc-3{
+  display: flex;
+  width: 100%; 
+  justify-content: center; 
+  gap: 500px;
+  background-color: #000000;
+  height: 80px;
+  padding: 20px;
+
+  
+}
+
+.banner-text {
+  
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+ 
+  
+}
+
+.contact-button {
+
+  background-color: #ffcb05; /* Yellow background for the button */
+  color: #000000; /* Black text for the button */
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px 25px;
+  box-shadow: 4px 4px #ffcb05;
+  border: none;
+  cursor: pointer;
+  
+}
+
+.contact-button:hover{
+  background-color: rgb(242, 104, 34);
+}
+
 
   /* Responsive layout for tablets */
 @media (max-width: 768px) {

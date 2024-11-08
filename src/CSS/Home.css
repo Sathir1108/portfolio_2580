@@ -1,38 +1,164 @@
 
-
-
-
-
-.grid-item-image{
-  padding-top: 200px;
-}
-  .grid-container-1{
-    display: grid;
-    grid-template-columns: 400px 800px;
-    margin-top: 50px;
+html{
+    scroll-padding-top: 20px;
   }
+
+#fch-0,#fch-1{
+  display: flex;
+  justify-content: center;
+  margin-top:75px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: rgb(34, 34, 34); 
   
+  
+}
+
+#fch-0{
+  background-color: rgb(252,244,237);
+  
+}
+
+
+.ch_1{
+  display: bolck;
+  margin-top:100px;
+  width:600px;
+  padding-top: 100px;
+  
+  
+}
+
+.ch_2{
+  display:block;
+  width:400px;
+  margin-top: 50px;
+  
+}
+
+.ch_3{
+  display:block;
+  width:400px;
+  padding-left: 120px;
+  margin-bottom: 50px;
  
+}
+
+.ch_4{
+ display:block;
+ width:800px;
+ margin-left:100px; 
+ margin-top: 50px;
+  
+}
+#chic_1{
+  font-size:30px;
+    
+}    
+
+
+#chi_1{
+  
+  text-align: left;
+}
+
+#chi_2{
+   text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+  
+}
+
+#chi_3{
+  text-align: left;
+}
+
+
+
+#chi_5{
+  
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+#chi_6{
+  text-align-last: auto;
+  text-align: left;
+  
+   
+}
+
 
   .grid-item-image{
-    width:300px;
+    width:250px;
     height:auto;
+    margin-bottom: 50px;
     
-    
-  }
-
-  .grid-item-image-1{
-    width:300px;
-    height:auto;
     
     
   }
 
-
-
-@media (max-width: 768px) {
-  .grid-container-1 {
-      grid-template-columns: 1fr;
+  .h-boarder {
+    display: flex;
+    background-color: black;
+    width:100%;
+    height: 50px;
+    
   }
-}
 
+  #chib-1{
+    font-size: 12px;
+    border-radius: 0px;
+    padding: 5px 20px;
+    box-shadow: 3px 3px rgba(0,0,0,0.8);
+    text-align:center;
+    background-color: rgb(242, 104, 34);
+    color: white;
+    font-weight: bold;
+    
+
+  }
+
+    
+  
+
+    
+    @media screen and (max-width: 1000px) {
+      /* Mobile view */
+      #fch-0, #fch-1 {
+
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        
+      }
+    
+      .ch_1 {
+        
+        margin-bottom: 40px;
+         
+      }
+    
+      .ch_4 {
+        
+        margin-top: 20px;
+        width:75%;
+        
+      }
+    
+
+    
+      #chic_1 {
+        font-size: 24px;
+      }
+
+      #chi_1{
+          text-align: center;
+      }
+      #chi_2{
+        text-align: center;
+      }
+      #chi_3{
+        text-align: center;
+      }
+    }
