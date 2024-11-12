@@ -69,6 +69,7 @@ html{
 
 .contact-details-2{
   margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .cdr-content{
@@ -108,4 +109,14 @@ html{
     background-color:rgb(255, 203, 0);
 
   
+}
+
+@media (max-width: 1024px) {
+  .grid-container-skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fs-1 {
+    font-size: 2rem;
+  }
 }
