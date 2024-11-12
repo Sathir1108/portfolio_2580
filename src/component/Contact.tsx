@@ -1,10 +1,26 @@
+
 import "../CSS/Contact.css";
 import profile_1 from "../assets/profile_1.png";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import { useState } from "react";
 
 function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSendMessage = () => {
+    // Here, you could also add form submission logic, like an API call
+    // After submission, clear the form fields
+    setName("");
+    setEmail("");
+    setSubject("");
+    setMessage("");
+  };
+
   return (
     <>
       <div className="contact">
@@ -27,6 +43,8 @@ function Contact() {
                 placeholder="First name"
                 aria-label="First name"
                 id="inputName"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
               />
             </div>
 
@@ -34,7 +52,13 @@ function Contact() {
               <label htmlFor="inputEmail4" className="form-label">
                 Email
               </label>
-              <input type="email" className="form-control" id="inputEmail4" />
+              <input
+                type="email"
+                className="form-control"
+                id="inputEmail4"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
             </div>
           </div>
 
@@ -51,6 +75,8 @@ function Contact() {
                 id="exampleFormControlTextarea1"
                 rows={1}
                 placeholder="Subject *"
+                value={subject}
+                onChange={(e) => setSubject(e.target.value)}
               ></textarea>
             </div>
           </div>
@@ -63,11 +89,17 @@ function Contact() {
               id="exampleFormControlTextarea2"
               rows={3}
               placeholder="Message *"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
             ></textarea>
           </div>
 
           <div className="cfr-4">
-            <button className="btn btn-primary" id="cfr-4">
+            <button
+              className="btn btn-primary"
+              id="cfr-4"
+              onClick={handleSendMessage}
+            >
               {" "}
               SEND MESSAGE
             </button>
