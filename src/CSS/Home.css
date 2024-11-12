@@ -11,10 +11,13 @@ html{
   color: rgb(34, 34, 34); 
   
   
+  
 }
 
 #fch-0{
-  background-color: rgb(252,244,237);
+  background-image: url('/images/bg-7.png');
+  background-size: cover;
+  
   
 }
 
@@ -22,7 +25,7 @@ html{
 .ch_1{
   display: bolck;
   margin-top:100px;
-  width:600px;
+  width:500px;
   padding-top: 100px;
   
   
@@ -32,6 +35,8 @@ html{
   display:block;
   width:400px;
   margin-top: 50px;
+  margin-bottom: 50px;
+   
   
 }
 
@@ -93,9 +98,13 @@ html{
     width:250px;
     height:auto;
     margin-bottom: 50px;
-    
-    
-    
+     border-radius: 8px; /* Optional: rounds the image corners */
+  display: block; /* Ensures the image behaves like a block element */
+  margin: 0 auto; /* Centers the image within the container */
+  }
+
+  #chi_7{
+    background-color: rgba(252,244,237) !important; ;
   }
 
   .h-boarder {
@@ -114,15 +123,11 @@ html{
     text-align:center;
     background-color: rgb(242, 104, 34);
     color: white;
-    font-weight: bold;
-    
+    font-weight: bold;    
 
   }
 
-    
-  
 
-    
     @media screen and (max-width: 1000px) {
       /* Mobile view */
       #fch-0, #fch-1 {
@@ -146,19 +151,3 @@ html{
         
       }
     
-
-    
-      #chic_1 {
-        font-size: 24px;
-      }
-
-      #chi_1{
-          text-align: center;
-      }
-      #chi_2{
-        text-align: center;
-      }
-      #chi_3{
-        text-align: center;
-      }
-    }
