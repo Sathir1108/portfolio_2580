@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-portfolio-deployment
+spec:
+  replicas: 3 # Desired state
+  selector:
+    matchLabels:
+      app: my-portfolio
+  template:
+    metadata:
+      labels:
+        app: my-portfolio
+    spec:
+      containers:
+        - name: my-portfolio-container
+          image: my-porfolio:latest
+          ports:
+            - containerPort: 80
