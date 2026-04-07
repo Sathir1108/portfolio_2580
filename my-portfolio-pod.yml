@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-portfolio-pod
+  labels:
+    app: my-portfolio
+spec:
+  containers:
+    - name: my-portfolio-container
+      image: my-porfolio:latest
+      ports:
+        - containerPort: 80
